@@ -1,0 +1,74 @@
+{
+ "properties": {
+  "displayName": "Basic-Compliance-Posture",
+  "policyType": "Custom",
+  "description": "This initiative provides basic compliance on the scope its applied.",
+  "metadata": {
+   "category": "General",
+   "version": "0.1",
+   "parameterScopes": {
+    "listOfAllowedSKUs": "/subscriptions/00019aaa-4084-499a-9c11-18675fc7e027",
+    "listOfAllowedLocations": "/subscriptions/00019aaa-4084-499a-9c11-18675fc7e027"
+   },
+   "createdBy": "f1094c65-7cfc-43ba-8643-d49995525128",
+   "createdOn": "2021-04-29T19:14:35.4163077Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Allowed virtual machine size SKUs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cccc23c7-8427-4f53-ad12-b6a63eb452b3",
+    "parameters": {
+     "listOfAllowedSKUs": {
+      "value": [
+       "standard_d2_v4",
+       "standard_d2_v3",
+       "standard_d4s_v4",
+       "standard_b4ms",
+       "standard_b2s"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "centralindia",
+       "southindia",
+       "asia"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Azure Backup should be enabled for Virtual Machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/013e242c-8828-4970-87b3-ab247555486d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Subnets should be associated with a Network Security Group_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e71308d3-144b-4262-b144-efdc3cc90517",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Audit VMs that do not use managed disks_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/06a78e20-9358-41c9-923c-fb736d382a4d",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/00019aaa-4084-499a-9c11-18675fc7e027/providers/Microsoft.Authorization/policySetDefinitions/28dd2a5f2dbf4a59aa198376",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "28dd2a5f2dbf4a59aa198376"
+}
